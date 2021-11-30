@@ -11,14 +11,22 @@
 		DAD4812F273BF29900540D32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD4812E273BF29900540D32 /* ContentView.swift */; };
 		DAD48131273BF29A00540D32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD48130273BF29A00540D32 /* Assets.xcassets */; };
 		DAD48134273BF29A00540D32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD48133273BF29A00540D32 /* Preview Assets.xcassets */; };
+		DAD4813B273BF43F00540D32 /* DemoGroupActivityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD4813A273BF43F00540D32 /* DemoGroupActivityType.swift */; };
+		DAD4813D273BF50100540D32 /* GroupActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD4813C273BF50100540D32 /* GroupActivityManager.swift */; };
+		DAD4813F273BF67A00540D32 /* MessageDataType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD4813E273BF67A00540D32 /* MessageDataType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA76EAE327421FA70013A824 /* SharePlay-Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SharePlay-Demo.entitlements"; sourceTree = "<group>"; };
+		DA76EAE427421FC10013A824 /* SharePlay-DemoRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SharePlay-DemoRelease.entitlements"; sourceTree = "<group>"; };
 		DAD48129273BF29900540D32 /* SharePlay-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SharePlay-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD4812C273BF29900540D32 /* SharePlay_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharePlay_DemoApp.swift; sourceTree = "<group>"; };
 		DAD4812E273BF29900540D32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DAD48130273BF29A00540D32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAD48133273BF29A00540D32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DAD4813A273BF43F00540D32 /* DemoGroupActivityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoGroupActivityType.swift; sourceTree = "<group>"; };
+		DAD4813C273BF50100540D32 /* GroupActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupActivityManager.swift; sourceTree = "<group>"; };
+		DAD4813E273BF67A00540D32 /* MessageDataType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageDataType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,13 @@
 		DAD4812B273BF29900540D32 /* SharePlay-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				DA76EAE427421FC10013A824 /* SharePlay-DemoRelease.entitlements */,
+				DA76EAE327421FA70013A824 /* SharePlay-Demo.entitlements */,
 				DAD4812C273BF29900540D32 /* SharePlay_DemoApp.swift */,
 				DAD4812E273BF29900540D32 /* ContentView.swift */,
+				DAD4813A273BF43F00540D32 /* DemoGroupActivityType.swift */,
+				DAD4813C273BF50100540D32 /* GroupActivityManager.swift */,
+				DAD4813E273BF67A00540D32 /* MessageDataType.swift */,
 				DAD48130273BF29A00540D32 /* Assets.xcassets */,
 				DAD48132273BF29A00540D32 /* Preview Content */,
 			);
@@ -138,7 +151,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAD4812F273BF29900540D32 /* ContentView.swift in Sources */,
+				DAD4813B273BF43F00540D32 /* DemoGroupActivityType.swift in Sources */,
+				DAD4813D273BF50100540D32 /* GroupActivityManager.swift in Sources */,
 				DAD4812D273BF29900540D32 /* SharePlay_DemoApp.swift in Sources */,
+				DAD4813F273BF67A00540D32 /* MessageDataType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +282,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SharePlay-Demo/SharePlay-Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SharePlay-Demo/Preview Content\"";
@@ -295,6 +312,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SharePlay-Demo/SharePlay-DemoRelease.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SharePlay-Demo/Preview Content\"";

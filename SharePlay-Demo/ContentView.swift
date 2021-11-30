@@ -8,14 +8,27 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @StateObject var manager = GroupActivityManager()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        VStack {
+            Button("Start sharing") {
+                manager.startSharing()
+            }
+            Text(manager.latestUUID?.uuidString ?? "")
+                .padding()
+            Button("Send message") {
+                manager.send(DemoMessage(id: UUID()))
+            }
+        }
+            .task {
+                for await session in DemoGroupActivityType.sessions() {
+                    manager.configureGroupSession(session)
+                }
+            }
+        
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+    
 }
